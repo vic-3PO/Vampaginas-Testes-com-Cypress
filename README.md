@@ -12,7 +12,7 @@ Bem-vindo(a) ao repositório de testes para o Vampáginas, uma plataforma dedica
 ### Clonar o Repositório
 
 ```bash
-git clone https://seu-repositorio.git
+git clone https://github.com/vic-3PO/Vampaginas-Testes-com-Cypress.git
 cd vampaginas-cypress-tests
 ```
 
