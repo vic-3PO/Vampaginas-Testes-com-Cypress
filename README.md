@@ -1,6 +1,6 @@
 # Vampáginas - Testes com Cypress
 
-Bem-vindo(a) ao repositório de testes para o Vampáginas, uma plataforma dedicada à democratização do conhecimento através de obras de domínio público. Este repositório utiliza o Cypress para realizar testes automatizados na API do Vampáginas.
+Bem-vindo(a) ao repositório de testes para o Vampáginas, uma plataforma dedicada à democratização do conhecimento através de obras de domínio público. Este repositório utiliza o Cypress para realizar testes automatizados na API e funcionalidades do Vampáginas.
 
 ## Como Utilizar
 
