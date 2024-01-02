@@ -4,7 +4,7 @@ describe("Testes na API do Google Books", () => {
 
     cy.request({
       method: "GET",
-      url: `https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=40&key=AIzaSyAMwvo_BPRfczKRtuG4mUpG6noxWIZYFss&filter=free-ebooks`,
+      url: `https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=40&key=${}&filter=free-ebooks`,
     }).then((res) => {
       expect(res.status).to.equal(200);
       expect(res.body).to.have.property("items");
@@ -21,7 +21,7 @@ describe("Testes na API do Google Books", () => {
       method: "GET",
       url: `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(
         query
-      )}&maxResults=40&key=AIzaSyAMwvo_BPRfczKRtuG4mUpG6noxWIZYFss&filter=free-ebooks`,
+      )}&maxResults=40&key=${}&filter=free-ebooks`,
     }).then((res) => {
       expect(res.status).to.equal(200);
 
@@ -44,7 +44,7 @@ describe("Testes na API do Google Books", () => {
       method: "GET",
       url: `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(
         invalidQuery
-      )}&maxResults=40&key=AIzaSyAMwvo_BPRfczKRtuG4mUpG6noxWIZYFss&filter=free-ebooks`,
+      )}&maxResults=40&key=${}&filter=free-ebooks`,
       failOnStatusCode: false, // Adicione esta opção
     }).then((res) => {
       if (res.status === 400) {
